@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rvine::VERSION
   spec.authors       = ["Kyuden"]
   spec.email         = ["msmsms.um@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Ruby wrapper for Vine API}
+  spec.description   = %q{Ruby wrapper for Vine API}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -17,6 +17,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
+
+  spec.add_runtime_dependency 'faraday'
+  spec.add_runtime_dependency 'faraday_middleware'
+  spec.add_runtime_dependency 'json'
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
