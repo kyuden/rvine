@@ -9,7 +9,7 @@ require 'rvine/client/users'
 
 module Rvine
   class Client
-    ROOT_URL     = 'https://api.vineapp.com/'
+    ROOT_URL    = 'https://api.vineapp.com/'
     LOGIN_ITEMS = [:key, :username, :password].freeze
 
     attr_accessor *LOGIN_ITEMS
