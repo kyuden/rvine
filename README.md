@@ -1,6 +1,7 @@
 # Rvine
 
-TODO: Write a gem description
+A simple Ruby wrapper for the unofficial and undocumented Vine API.
+Please pull-request.
 
 ## Installation
 
@@ -18,7 +19,42 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Get popular timeline
+```ruby
+Rvine.popular_timeline
+```
+
+### Get tag's items
+```ruby
+Rvine.tags 'ruby'
+```
+
+### Get a specified user's profile
+```ruby
+user_id = '1234567890abcdefg'
+Rvine.profile user_id
+```
+
+
+## Authenticated requests
+
+### Login with "username & password" or "key"
+```
+rvine = Rvine.new url_name: 'kyuden', password: 'mysecret'
+# or
+rvine = Rvine.new key: 'authtoken'
+```
+
+### Get my data
+```ruby
+rvine.me
+```
+
+## more
+Read [code](https://github.com/VineAPI/VineAPI/blob/master/endpoints.md).
+
+## ToDo
+All support [this](https://github.com/VineAPI/VineAPI/blob/master/endpoints.md)
 
 ## Contributing
 
