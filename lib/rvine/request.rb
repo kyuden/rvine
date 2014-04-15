@@ -30,7 +30,6 @@ module Rvine
         response = connection.send(method, path, params) do |req|
           req[:vine_session_id] = @key if @key
         end
-        p response
         response.body['data']
       end
     end

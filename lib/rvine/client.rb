@@ -33,7 +33,6 @@ module Rvine
 
     def login
       result = post('/users/authenticate', username: username, password: password)
-      p result
       @key   = result['key']
     end
 
