@@ -1,7 +1,9 @@
 # Rvine
 
-A simple Ruby wrapper for the unofficial and undocumented Vine API.
-Please pull-request.
+A simple Ruby wrapper for the unofficial [Vine](https://vine.co/) API.   
+
+[Vine](https://vine.co/) is a mobile service that lets you create, share short videos and sure enoght is a cool app, but has a small problem - sometimes I just want to share the video link with my friends without sharing it on twitter.  
+Yes!! Use Rvine.
 
 ## Installation
 
@@ -51,6 +53,7 @@ rvine.me
 ```
 
 ## more
+Rvine is more multifunction.   
 Read [code](https://github.com/VineAPI/VineAPI/blob/master/endpoints.md).
 
 ## ToDo
