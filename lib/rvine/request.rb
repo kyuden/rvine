@@ -1,7 +1,7 @@
 module Rvine
   class Client
     module Request
-      [:get, :post, :delet, :put, :patch].each{ |verb| define_method(verb){ |path, params={}| request(verb, path, params)}}
+      [:get, :post, :delete, :put, :patch].each{ |verb| define_method(verb){ |path, params={}| request(verb, path, params)}}
 
       def connection
         options = {
