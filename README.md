@@ -40,9 +40,9 @@ Rvine.profile user_id
 
 ## Authenticated requests
 
-### Login with "username & password" or "key"
+### Login with "mail & password" or "key"
 ```
-rvine = Rvine.new url_name: 'kyuden', password: 'mysecret'
+rvine = Rvine.new mail: 'kyuden@example.com', password: 'mysecret'
 # or
 rvine = Rvine.new key: 'authtoken'
 ```

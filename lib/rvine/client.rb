@@ -10,7 +10,7 @@ require 'rvine/client/users'
 module Rvine
   class Client
     ROOT_URL    = 'https://api.vineapp.com/'
-    LOGIN_ITEMS = [:key, :username, :password].freeze
+    LOGIN_ITEMS = [:key, :mail, :password].freeze
 
     attr_accessor *LOGIN_ITEMS
 
@@ -19,7 +19,7 @@ module Rvine
         send("#{item}=", args[item])
       end
 
-      login if !key && username && password
+      login if !key && mail && password
     end
 
     #endpoint
@@ -32,7 +32,7 @@ module Rvine
     private
 
     def login
-      result = post('/users/authenticate', username: username, password: password)
+      result = post('/users/authenticate', username: mail, password: password)
       @key   = result['key']
     end
 
